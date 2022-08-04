@@ -35,7 +35,8 @@ function PlaylistItem({playlist}) {
                             <EditIcon
                                 style={{
                                     borderRadius:'50px',
-                                    overflow:'hidden'
+                                    overflow:'hidden',
+                                    
                                 }}
                                 fontSize={'20px'}
                             />

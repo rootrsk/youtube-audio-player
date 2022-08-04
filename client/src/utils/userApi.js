@@ -1,6 +1,6 @@
 import axios from "axios";
-axios.defaults.baseURL="http://localhost:3001"
-axios.defaults.baseURL="https://rootrsk-youtube-player.herokuapp.com"
+// axios.defaults.baseURL="http://localhost:3001"
+
 export async function getApi(url){
     try {
         const response = await axios({

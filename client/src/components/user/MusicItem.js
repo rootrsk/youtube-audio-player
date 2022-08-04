@@ -14,8 +14,6 @@ function MusicItem({song,index,editable}) {
             
         })
     }
-    // console.log(playingSong,song)
-    console.log(editable)
     return (
         <div className='song_card' >
             <div>
@@ -29,7 +27,6 @@ function MusicItem({song,index,editable}) {
                         }
                     </div>
                 }   
-                 
             </div>
             
             <img src={song.thumbnail} alt={song.title} className='song_thumbnail' />
@@ -47,12 +44,20 @@ function MusicItem({song,index,editable}) {
                 <IconButton
                     onClick={()=>playNow(song.url)}
                 >
-                    <PlayCircleIcon />
+                    <PlayCircleIcon
+                        style={{
+                            color:'white'
+                        }}
+                    />
                 </IconButton>
                 {editable && <IconButton
                     onClick={()=>playNow(song.url)}
                 >
-                    <DeleteIcon />
+                    <DeleteIcon
+                        style={{
+                            color:'white'
+                        }}
+                    />
                 </IconButton>}
             </div>
         </div>

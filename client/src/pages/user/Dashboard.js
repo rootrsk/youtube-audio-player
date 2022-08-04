@@ -11,7 +11,7 @@ function Dashboard() {
     const [playlistModal,setPlaylistModal] = useState(false)
     const fetchHandler = async()=>{
         const response = await axios({
-            url:'http://localhost:3001/user/playlists',
+            url:'/user/playlists',
             method:'get'
         })
         if (response.data && response.data.playlists) {
