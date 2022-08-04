@@ -15,7 +15,7 @@ function Playlist() {
 	const [editable,setEditable] = useState(false)
 	const fetchPlaylist = async() =>{
 		const response = await axios({
-			url: `http://localhost:3001/user/playlist?_id=${id}`
+			url: `/user/playlist?_id=${id}`
 		})
 		setPlaylist(response.data.playlist)
 	}
