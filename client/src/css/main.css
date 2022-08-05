@@ -19,6 +19,29 @@ a{
     color: white;
     text-decoration: none;
 }
+.mdude-big{
+    color: var(--primary-text);
+    font-size: 70px;
+}
+
+.pt{
+    color: var(--primary-text);
+}
+.home-logo{
+    color: var(--primary-text);
+    font-family: 'Rubik Wet Paint', cursive;
+    background-image: url('https://i.ibb.co/WDNyVTx/452-4520918-white-flame-png.png');
+    /* background-repeat: repeat; */
+    background-clip: text;
+    background-size: contain;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+}
 .pointer{
     cursor: pointer;
 }

@@ -7,14 +7,18 @@
     justify-content: space-between;
     align-items: center;
 }
-.main_header button{
-   color: white;
-   background: transparent;
-   border: none;
-   outline: none;
-   /* font-size: 20px;   */
-   cursor: pointer;
-
+.main_header a{
+   border: 1px solid white;
+   padding: 7px;
+   margin-left: 10px;
+   border-radius: 2px;
+   background-color: rgb(110, 7, 34);
+}
+.active-link{
+    
+}
+.inactive-link{
+    background-color: blue !important;
 }
 .logo-text{
     font-family: 'Rubik Wet Paint', cursive;
@@ -23,6 +27,10 @@
 }
 .header-navigations{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    place-content: center;
+    place-items: center;
 }
 .header-navigations ul{
     list-style-type: none;

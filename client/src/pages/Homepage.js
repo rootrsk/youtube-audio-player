@@ -2,6 +2,11 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux'
 import { useState } from 'react';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import LanguageIcon from '@mui/icons-material/Language';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import GitHubIcon from '@mui/icons-material/GitHub';
 function Homepage() {
     const count = useSelector((state) => state)
     console.log(count)
@@ -9,44 +14,25 @@ function Homepage() {
 
     return (
         <div>
-            <h2>Homepage</h2>
-            <Link to='/app/dashboard'>Dashboard</Link>
-            {open && <div style={{
-                position:'fixed',
-                left:0,
-                right:0,
-                top:0,
-                bottom:0,
-                // background:'#fff',
-                // opacity:.6,
-                display:'flex',
-                justifyContent:'center',
-                alignItems:'center'
-            }}
-                onClick={()=>setOpen(false)}
-            >
-                <div 
-                    style={{
-                        background:'#fff',
-                        border:'1px solid black',
-                        padding:30,
-                        position:'relative',
-                        zIndex:5
-                    }}
-                >
-                    <h2>Difficulties</h2>
-                    <div>
-                        <li>High</li>
-                        <li>Medium</li>
-                        <li>Low</li>
-                    </div>
-                    <button onClick={()=>setOpen(false)}>close</button>    
+            <div className="main_header">
+                <h1 className='home-logo'>MDUDE</h1>
+                <div>
+                    <Link to='/app/dashboard'>Let's Begain</Link>
                 </div>
-                
-            </div>}
-            <button onClick={()=>setOpen(!open)}>
-                open
-            </button>
+            </div>
+            
+            <div className='landing-div'>
+                <h1 className='mdude-big'>MDUDE</h1>
+            </div>
+            <p
+                className='pt'
+            >
+                MDude is a music player app which behind the scenes uses youtube api  to  play your favourate  songs. Just create a playlist and your favouate songs by copying  youtube url.This is only for fun and educational purpose we do not promote any kind of api abuse.
+            </p>
+            
+            <div>
+
+            </div>
         </div>
     )   
 }

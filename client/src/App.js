@@ -84,7 +84,6 @@ function App() {
 					ref={ref}
 				/>}
 			</div>
-			{console.log(ref)}
 		</div>
 		
 	)
